@@ -13,7 +13,7 @@
 			<a class="navbar-brand h1" href="{{ route('issues.index') }}">CRUD Issues</a>
 			<div class="justify-end">
 				<div class="col">
-					<a class="btn btn-sm btn-success" href="{{ route('issues.create') }}">Thêm vấn đề mới</a>
+					<a class="btn btn-success" href="{{ route('issues.create') }}">Thêm vấn đề mới</a>
 				</div>
 			</div>
 		</div>
@@ -57,6 +57,7 @@
 								<td>{{ $issue->urgency }}</td>
 								<td>{{ $issue->status }}</td>
 								<td>
+									<a href="{{ route('issues.show', $issue->id) }}" class="btn btn-info">Xem</a>
 									<a href="{{ route('issues.edit', $issue->id) }}" class="btn btn-primary">Sửa</a>
 			
 									<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $issue->id }}">

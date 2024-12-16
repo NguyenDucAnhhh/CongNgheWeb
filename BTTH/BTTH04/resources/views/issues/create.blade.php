@@ -12,7 +12,7 @@
             <a class="navbar-brand h1" href="{{ route('issues.index') }}">CRUD Issues</a>
             <div class="justify-end">
                 <div class="col">
-                    <a class="btn btn-sm btn-success" href="{{ route('issues.create') }}">Thêm vấn đề mới</a>
+                    <a class="btn btn-success" href="{{ route('issues.create') }}">Thêm vấn đề mới</a>
                 </div>
             </div>
         </div>
@@ -62,6 +62,7 @@
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Thêm</button>
+                    <a href="{{ route('issues.index') }}" class="btn btn-secondary">Back</a>
                 </form>
             </div>
         </div>

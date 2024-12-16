@@ -50,7 +50,8 @@ class IssueController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $issue = Issue::find($id);
+        return view('issues.show', compact('issue'));
     }
 
     /**
